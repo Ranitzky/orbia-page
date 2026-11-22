@@ -2,6 +2,8 @@
 
 An English-language introduction to [Orbia](https://github.com/Ranitzky/orbia), a self-hosted browser start page with quicklinks and a searchable bookmark library. The page uses static HTML and CSS, with no JavaScript, build step, external fonts, or login. The JetBrains Mono license is included in `assets/OFL.txt`.
 
+The Linkding section explains how to migrate bookmarks and connect compatible clients. It includes a concept illustration for Raycast.
+
 ## Preview locally
 
 Open `index.html` in a browser or run `python3 -m http.server 8000` from the repository root and visit `http://localhost:8000`.

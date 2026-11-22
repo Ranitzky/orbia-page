@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#090f12">
   <meta name="description" content="Orbia is a self-hosted browser start page. Open your favorite sites with three-character codes and search your saved bookmarks.">
-  <title>[·] Orbia · Self-hosted browser start page</title>
+  <title>[ · ] Orbia · Self-hosted browser start page</title>
   <link rel="icon" href="./assets/orbia.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./style.css">
 </head>
@@ -47,7 +47,25 @@
     <img src="./assets/bookmarks.png" alt="Orbia's bookmark library with 360 example bookmarks, a tag sidebar, search, and bookmark cards" width="1671" height="900" loading="lazy">
   </a>
 </section>
-<section class="install wrap" id="installation"><div><p class="label">Installation</p><h2>Run Orbia on your server.</h2><p>Start Orbia with Docker Compose. A SQLite database on your server stores your bookmarks and dashboard pages.</p></div><a class="button" href="https://github.com/Ranitzky/orbia#run-on-unraid">Read the installation guide</a></section>
+<section class="install wrap" id="installation">
+  <div>
+    <p class="label">Installation</p>
+    <h2>Run Orbia on your server.</h2>
+    <p>Start Orbia with Docker Compose. A SQLite database on your server stores your bookmarks and dashboard pages.</p>
+  </div>
+  <a class="button" href="https://github.com/Ranitzky/orbia#run-on-unraid">Read the installation guide</a>
+</section>
+<section class="detail integration wrap" id="linkding">
+  <div class="integration-copy">
+    <h2>Bring your bookmarks from Linkding</h2>
+    <p>In <strong>Settings → Import from Linkding</strong>, enter your Linkding server URL and an API token from that server. Select <strong>Start import</strong> and keep the tab open. Orbia imports active and archived bookmarks with their tags and notes. You can run the import again to pick up new or updated bookmarks.</p>
+    <p>Orbia provides a Linkding-compatible API for bookmarks, tags, and profile lookups. To connect a client such as the Linkding browser extension or the Linkding extension for Raycast, generate a token under <strong>Settings → Linkding integrations</strong> and give the client your Orbia server URL and that token.</p>
+  </div>
+  <figure class="screen integration-preview">
+    <img src="./assets/orbia-raycast-concept.jpg" alt="Concept of a Raycast bookmark search with Orbia results, the selected bookmark’s domain, and its tags" width="1672" height="941" loading="lazy">
+    <figcaption>Concept illustration of searching Orbia bookmarks in Raycast.</figcaption>
+  </figure>
+</section>
 </main>
 <footer class="wrap">
   <a class="brand" href="./"><img src="./assets/orbia.svg" width="32" height="32" alt="">Orbia</a>

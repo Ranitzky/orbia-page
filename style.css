@@ -36,7 +36,7 @@ nav { min-height: 76px; }
 .label::before { content: ""; width: 1.65rem; height: 2px; background: currentColor; }
 h1 { font-size: clamp(3.25rem, 6.1vw, 5.7rem); line-height: 1.02; letter-spacing: -.065em; margin-block: 1.25rem; }
 h1 span, code { color: var(--accent); }
-.lead, .detail > p:not(.label), article p, .install p:not(.label) { color: var(--muted); max-width: 56ch; }
+.lead, .detail > p:not(.label), article p, .install p:not(.label), .integration-copy p { color: var(--muted); max-width: 56ch; }
 .lead { font-size: 1.12rem; max-width: 45ch; }
 .actions { flex-wrap: wrap; gap: .7rem; margin-top: 2rem; }
 .button, .secondary { display: inline-block; padding: .85rem 1.15rem; font: .92rem var(--mono); }
@@ -47,8 +47,8 @@ h1 span, code { color: var(--accent); }
 .keys { display: flex; gap: clamp(10px, 1.2vw, 20px); transform: translateY(-10px); }
 .keys i { position: relative; display: grid; place-items: center; width: clamp(60px, 7.6vw, 105px); aspect-ratio: 1; font: clamp(2.5rem, 4.3vw, 4rem) var(--mono); border-radius: 15%; background: linear-gradient(145deg, #354b52, #18282f); border: 2px solid #69828a; color: #e3eeee; box-shadow: -2px 3px #2b4047,-4px 6px #293d43,-6px 9px #263940,-8px 12px #22353b,-10px 15px #1e3035,-12px 18px #15272d,-16px 24px 11px #020809bb; }
 .keys i:last-child { background: linear-gradient(145deg,#a0fff2,#38d9d2); color: #113d40; border-color: #b0fff3; box-shadow: -2px 3px #31bdb7,-4px 6px #2dafab,-6px 9px #299e9c,-8px 12px #278f8d,-10px 15px #237f80,-12px 18px #216a70,-16px 24px 11px #020809bb; }
-figcaption { position: absolute; bottom: 1.25rem; left: 1.25rem; padding: .35rem .7rem; border: 1px solid #375156; border-radius: 4px; background: #0a171c; color: #d4dfdf; font: .85rem var(--mono); }
-figcaption b { color: var(--accent); } figcaption span { margin-inline: .4rem; }
+.visual figcaption { position: absolute; bottom: 1.25rem; left: 1.25rem; padding: .35rem .7rem; border: 1px solid #375156; border-radius: 4px; background: #0a171c; color: #d4dfdf; font: .85rem var(--mono); }
+.visual figcaption b { color: var(--accent); } .visual figcaption span { margin-inline: .4rem; }
 .detail, .install, footer { border-top: 1px solid var(--line); }
 .detail, .install { padding-block: clamp(3rem, 5vw, 5rem); }
 h2 { font-size: clamp(2rem, 3.4vw, 3.3rem); letter-spacing: -.055em; line-height: 1.12; margin: .85rem 0 1rem; }
@@ -58,6 +58,10 @@ h2 { font-size: clamp(2rem, 3.4vw, 3.3rem); letter-spacing: -.055em; line-height
 kbd { font: .85rem var(--mono); padding: .3rem .55rem; border: 1px solid #486065; border-radius: 4px; }
 h3 { margin: 1rem 0 .4rem; font-size: 1.35rem; letter-spacing: -.035em; }
 .install { display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+.integration { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 38%); align-items: center; gap: clamp(1.5rem, 5vw, 4rem); }
+.integration-copy p + p { margin-top: .85rem; }
+.integration-preview { width: 100%; max-width: 28rem; margin: 0; justify-self: end; }
+.integration-preview figcaption { padding: .75rem 1rem; color: var(--muted); font-size: .9rem; }
 footer { padding-block: 1.5rem; color: var(--muted); flex-wrap: wrap; gap: 1rem; }
 .footer-links { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; }
 .legal { padding-block: clamp(3rem, 8vw, 7rem); }
@@ -72,6 +76,8 @@ footer { padding-block: 1.5rem; color: var(--muted); flex-wrap: wrap; gap: 1rem;
   .visual { aspect-ratio: 1.8; }
   .keys i { width: clamp(56px, 15vw, 100px); }
   .install { align-items: start; flex-direction: column; }
+  .integration { grid-template-columns: 1fr; }
+  .integration-preview { justify-self: start; }
 }
 @media (max-width: 520px) {
   nav { min-height: 64px; }
@@ -81,7 +87,7 @@ footer { padding-block: 1.5rem; color: var(--muted); flex-wrap: wrap; gap: 1rem;
   .repo { padding: .35rem .45rem; }
   .features { grid-template-columns: 1fr; }
   .button, .secondary { padding: .78rem .85rem; font-size: .83rem; }
-  figcaption { bottom: .65rem; left: .65rem; }
+  .visual figcaption { bottom: .65rem; left: .65rem; }
 }
 @media (max-width: 370px) {
   nav { flex-wrap: wrap; gap: .5rem; padding-block: .65rem; }
