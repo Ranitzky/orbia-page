@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090f12">
+  <meta name="description" content="Open your favorite sites with three-character codes and search your bookmarks with Orbia, a keyboard launcher you host yourself.">
+  <title>Orbia · Keyboard launcher and bookmark library</title>
+  <link rel="icon" href="./assets/orbia.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<a class="skip" href="#inhalt">Skip to content</a>
+<header><nav class="wrap" aria-label="Main navigation">
+  <a class="brand" href="./"><img src="./assets/orbia.svg" alt="" width="40" height="40">Orbia</a>
+  <div class="links"><a href="#einblick">Overview</a><a href="#installation">Installation</a><a class="repo" href="https://github.com/Ranitzky/orbia">GitHub</a></div>
+</nav></header>
+<main id="inhalt">
+<section class="hero wrap">
+  <div class="intro">
+    <p class="label">Keyboard launcher</p>
+    <h1>Your links.<br><span>Three keys.</span></h1>
+    <p class="lead">Type a short code to open a favorite site, or search your bookmarks when you need a link you saved. Orbia runs on your own server.</p>
+    <div class="actions"><a class="button" href="#installation">Install Orbia</a><a class="secondary" href="#einblick">View dashboard</a></div>
+  </div>
+  <figure class="visual" aria-label="Typing G I T opens GitHub">
+    <div class="board" aria-hidden="true"><div class="keys"><i>G</i><i>I</i><i>T</i></div></div>
+    <figcaption><b>git</b><span aria-hidden="true">↵</span> github.com</figcaption>
+  </figure>
+</section>
+<section class="detail wrap" id="einblick">
+  <p class="label">The dashboard</p>
+  <h2>A home for your quicklinks.</h2>
+  <p>Group the sites you visit most by topic or project. Type a link’s three-character code to open it.</p>
+  <a class="screen" href="./assets/dashboard.png" aria-label="Open the full-size dashboard screenshot"><img src="./assets/dashboard.png" alt="Orbia dashboard with color-coded groups and a three-character code beside each link" loading="lazy"></a>
+  <div class="features">
+    <article><kbd>Ctrl / ⌘ + P</kbd><h3>Search your bookmarks</h3><p>Search titles, URLs, and notes. Add a tag like <code>#work</code> to narrow the results.</p></article>
+    <article><kbd>Ctrl / ⌘ + E</kbd><h3>Customize your dashboard</h3><p>Create groups, choose your own codes, and drag quicklinks between groups.</p></article>
+    <article><kbd>Ctrl / ⌘ + K</kbd><h3>Open the command palette</h3><p>Switch dashboard pages or find an action by typing its name.</p></article>
+    <article><kbd aria-label="Comma">,</kbd><h3>Open settings</h3><p>Change the theme, language, or how links open.</p></article>
+  </div>
+</section>
+<section class="install wrap" id="installation"><div><p class="label">Installation</p><h2>Run Orbia on your server.</h2><p>Start Orbia with Docker Compose. A SQLite database on your server stores your bookmarks and dashboard pages.</p></div><a class="button" href="https://github.com/Ranitzky/orbia#run-on-unraid">Read the installation guide</a></section>
+</main>
+<footer class="wrap">
+  <a class="brand" href="./"><img src="./assets/orbia.svg" width="32" height="32" alt="">Orbia</a>
+  <div class="footer-links">
+    <a href="./legal-notice.html">Legal notice</a>
+    <a href="./privacy-notice.html">Privacy notice</a>
+    <a href="https://github.com/Ranitzky/orbia">Source on GitHub</a>
+  </div>
+</footer>
+</body>
+</html>
