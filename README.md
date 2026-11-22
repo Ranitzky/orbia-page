@@ -8,6 +8,6 @@ Open `index.html` in a browser or run `python3 -m http.server 8000` from the rep
 
 ## Publish on GitHub Pages
 
-Replace the contact email placeholder in `privacy-notice.html` before publishing. The privacy notice links to the legal notice for the operator's name and postal address.
+The privacy notice provides a contact email address and links to the legal notice for the operator's name and postal address.
 
 Push the files to your GitHub repository. In **Settings → Pages → Build and deployment**, choose **Deploy from a branch**, select the branch containing this page and **/ (root)**, then save. GitHub displays the site URL after deployment. Local asset paths are relative so the page also works under a repository subpath.
