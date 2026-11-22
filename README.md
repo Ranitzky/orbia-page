@@ -1,6 +1,6 @@
 # Orbia project page
 
-An English-language introduction to [Orbia](https://github.com/Ranitzky/orbia), a self-hosted keyboard launcher and bookmark library. The page uses static HTML and CSS, with no JavaScript, build step, external fonts, or login. The dashboard screenshot loads lazily. The JetBrains Mono license is included in `assets/OFL.txt`.
+An English-language introduction to [Orbia](https://github.com/Ranitzky/orbia), a self-hosted keyboard launcher and bookmark library. The page uses static HTML and CSS, with no JavaScript, build step, external fonts, or login. The JetBrains Mono license is included in `assets/OFL.txt`.
 
 ## Preview locally
 
