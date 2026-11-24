@@ -55,6 +55,21 @@
   </div>
   <a class="button" href="https://github.com/Ranitzky/orbia#run-on-unraid">Read the installation guide</a>
 </section>
+<section class="detail wrap" id="macos">
+  <h2>Run Orbia on macOS.</h2>
+  <p>Install and start <a href="https://docs.docker.com/desktop/setup/install/mac-install/">Docker Desktop</a>. Then open Terminal and run these commands. Docker downloads the public Orbia image on the first run.</p>
+  <pre class="install-command"><code>mkdir -p "$HOME/Orbia"
+
+docker run -d --name orbia \
+  --platform linux/amd64 \
+  --restart unless-stopped \
+  -p 127.0.0.1:8726:8726 \
+  -e PUID="$(id -u)" \
+  -e PGID="$(id -g)" \
+  -v "$HOME/Orbia:/data" \
+  ghcr.io/ranitzky/orbia:latest</code></pre>
+  <p>Open <a href="http://127.0.0.1:8726">http://127.0.0.1:8726</a> on your Mac and complete setup. Orbia is reachable only from your Mac. The database stays in <code>~/Orbia/orbia.db</code> when you replace the container.</p>
+</section>
 <section class="detail integration wrap" id="linkding">
   <div class="integration-copy">
     <h2>Bring your bookmarks from Linkding</h2>

@@ -58,6 +58,18 @@ h2 { font-size: clamp(2rem, 3.4vw, 3.3rem); letter-spacing: -.055em; line-height
 kbd { font: .85rem var(--mono); padding: .3rem .55rem; border: 1px solid #486065; border-radius: 4px; }
 h3 { margin: 1rem 0 .4rem; font-size: 1.35rem; letter-spacing: -.035em; }
 .install { display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+.detail > p a { color: var(--accent); text-decoration: underline; }
+.install-command {
+  max-width: 42rem;
+  margin: 1.25rem 0;
+  padding: 1rem;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #0c1317;
+  font: .875rem/1.6 var(--mono);
+}
+.install-command code { color: inherit; font: inherit; }
 .integration { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 38%); align-items: center; gap: clamp(1.5rem, 5vw, 4rem); }
 .integration-copy p + p { margin-top: .85rem; }
 .integration-preview { width: 100%; max-width: 28rem; margin: 0; justify-self: end; }

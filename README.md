@@ -4,6 +4,8 @@ An English-language introduction to [Orbia](https://github.com/Ranitzky/orbia), 
 
 The Linkding section explains how to migrate bookmarks and connect compatible clients. It includes a concept illustration for Raycast.
 
+The macOS section shows how to run Orbia locally with Docker Desktop.
+
 ## Preview locally
 
 Open `index.html` in a browser or run `python3 -m http.server 8000` from the repository root and visit `http://localhost:8000`.
